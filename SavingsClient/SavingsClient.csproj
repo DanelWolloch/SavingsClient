@@ -57,6 +57,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddPageScript.js" />
+    <Content Include="AddPageStyle.css" />
     <Content Include="AddSavingPage.html" />
     <Content Include="Index.html" />
     <Content Include="SavingScript.js" />
