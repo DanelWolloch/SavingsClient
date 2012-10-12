@@ -18,6 +18,8 @@
         localStorage['saveDate' + numOfSavings] = date;
         localStorage['saveNotes' + numOfSavings] = notes;
 
+        $('.label-success').show();
+
     } else {
         alert('מכשיר לא נתמך');
     }

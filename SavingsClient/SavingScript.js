@@ -11,22 +11,21 @@ function loadTable() {
 
         var numOfSavings = localStorage["numOfSavings"];
 
-        if (numOfSavings != null && isNaN(numOfSavings) && numOfSavings > 0) {
+        if (numOfSavings > 0) {
 
-            var type = localStorage['saveType' + numOfSavings];
-            var date = localStorage['saveDate' + numOfSavings];
-            var notes = localStorage['saveNotes' + numOfSavings];
+            for (var i = 1; i <= numOfSavings; i++) {
+                var type = localStorage['saveType' + i];
+                var date = localStorage['saveDate' + i];
+                var notes = localStorage['saveNotes' + i];
+                var newRow = "<tr>" +
+                                "<td>" + i + "</td>" +
+                                "<td>" + type + "</td>" +
+                                "<td>" + date + "</td>" +
+                                "<td>" + notes + "</td>"
+                "</tr>";
 
-
-
-            var newRow = "<tr>" +
-                            "<td>" + numOfSavings + "</td>" +
-                            "<td>" + type + "</td>" +
-                            "<td>" + date + "</td>" +
-                            "<td>" + notes + "</td>"
-            "</tr>";
-
-            $('.MyTable').append(newRow);
+                $('.MyTable').append(newRow);
+            }
         }
 
     } else {
@@ -37,11 +36,13 @@ function loadTable() {
 function deleteAll() {
     var numOfSavings = localStorage["numOfSavings"];
 
-    for (var i = 1; i < numOfSavings + 1; i++) {
+    for (var i = 1; i <= numOfSavings; i++) {
         localStorage.removeItem('saveType' + i);
         localStorage.removeItem('saveDate' + i);
         localStorage.removeItem('saveNotes' + i);
     }
 
     localStorage["numOfSavings"] = 0;
+
+    location.reload();
 }
