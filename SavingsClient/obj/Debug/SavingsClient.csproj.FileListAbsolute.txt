@@ -1,0 +1,5 @@
+C:\Users\Danel\Documents\GitHub\SavingsClient\SavingsClient\bin\SavingsClient.dll
+C:\Users\Danel\Documents\GitHub\SavingsClient\SavingsClient\bin\SavingsClient.pdb
+C:\Users\Danel\Documents\GitHub\SavingsClient\SavingsClient\obj\Debug\SavingsClient.csprojResolveAssemblyReference.cache
+C:\Users\Danel\Documents\GitHub\SavingsClient\SavingsClient\obj\Debug\SavingsClient.dll
+C:\Users\Danel\Documents\GitHub\SavingsClient\SavingsClient\obj\Debug\SavingsClient.pdb

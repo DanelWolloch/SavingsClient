@@ -1,0 +1,24 @@
+﻿h1
+{
+    text-align: center;
+}
+
+.MyTable
+{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+    .MyTable th, .MyTable td
+    {
+        border-top: 1px solid #DDDDDD;
+        line-height: 20px;
+        padding: 8px;
+        text-align:right;
+        vertical-align: top;
+    }
+
+.EditButttons
+{
+    width:100%;
+}
