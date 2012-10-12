@@ -5,28 +5,28 @@
     <link href="AddPageStyle.css" rel="stylesheet" />
     <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="AddPageScript.js"></script>
     <title>שמירה חדשה</title>
 </head>
 <body dir="rtl">
-
     <h1>שמירה חדשה</h1>
     <label>סוג השמירה:</label>
-    <select>
-        <option>כונן יום</option>
-        <option>שמירת לוט"ם</option>
-        <option>חמישי לוט"ם</option>
-        <option>חמישי ברקת</option>
-        <option>כונן ברקת</option>
-        <option>שבת לוט"ם</option>
-        <option>שבת ברקת</option>
+    <select class="Inputs" id="saveType">
+        <option value="כונן יום">כונן יום</option>
+        <option value="שמירת לוטם">שמירת לוטם</option>
+        <option value="חמישי לוטם">חמישי לוטם</option>
+        <option value="חמישי ברקת">חמישי ברקת</option>
+        <option value="כונן ברקת">כונן ברקת</option>
+        <option value="שבת לוטם">שבת לוטם</option>
+        <option value="שבת ברקת">שבת ברקת</option>
     </select>
     <label>תאריך:</label>
-    <input class="date" type="date" />
+    <input class="Inputs" type="date" id="saveDate"/>
     <br />
-    <textarea rows="3" placeholder="הערות..."></textarea>
+    <textarea id="saveNotes" rows="3" placeholder="הערות..."></textarea>
     <br />
     <br />
-    <button class="btn btn-primary EditButtons" type="button">שמור</button>
+    <button class="btn btn-primary EditButtons" type="button" onclick="addSave()">שמור</button>
     <a href="Index.html" class="btn btn-primary">חזור לעמוד הראשי</a>
 </body>
 </html>
