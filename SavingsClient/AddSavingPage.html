@@ -8,7 +8,7 @@
     <script src="AddPageScript.js"></script>
     <title>שמירה חדשה</title>
 </head>
-<body dir="rtl">
+<body dir="rtl" onload="load()">
     <h1>שמירה חדשה</h1>
     <label>סוג השמירה:</label>
     <select class="Inputs" id="saveType">
@@ -28,7 +28,7 @@
     <span class="label label-success" hidden="hidden">השמירה נוספה בהצלחה</span>
     <br />
     <br />
-    <button class="btn btn-primary EditButtons" type="button" onclick="addSave()">שמור</button>
+    <button id="btnSave" class="btn btn-primary EditButtons" type="button" onclick="addSave()">שמור</button>
     <a href="Index.html" class="btn btn-primary">חזור לעמוד הראשי</a>
 </body>
 </html>

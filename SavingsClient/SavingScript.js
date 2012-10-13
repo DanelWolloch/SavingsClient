@@ -19,7 +19,7 @@ function loadTable() {
                 var notes = localStorage['saveNotes' + i];
                 var newRow = "<tr>" +
                                 "<td>" + i + "</td>" +
-                                "<td>" + type + "</td>" +
+                                "<td><a href='AddSavingPage.html?id=" + i + "'>" + type + "</a></td>" +
                                 "<td>" + date + "</td>" +
                                 "<td>" + notes + "</td>"
                 "</tr>";
@@ -35,14 +35,14 @@ function loadTable() {
 
 function deleteAll() {
     var numOfSavings = localStorage["numOfSavings"];
+    localStorage.clear();
+    //for (var i = 1; i <= numOfSavings; i++) {
+    //    localStorage.removeItem('saveType' + i);
+    //    localStorage.removeItem('saveDate' + i);
+    //    localStorage.removeItem('saveNotes' + i);
+    //}
 
-    for (var i = 1; i <= numOfSavings; i++) {
-        localStorage.removeItem('saveType' + i);
-        localStorage.removeItem('saveDate' + i);
-        localStorage.removeItem('saveNotes' + i);
-    }
-
-    localStorage["numOfSavings"] = 0;
+    //localStorage["numOfSavings"] = 0;
 
     location.reload();
 }
